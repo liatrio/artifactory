@@ -8,10 +8,14 @@ This is a vagrant box for artifactory pro or oss. The default is pro. To have it
 
 To create the vagrant box, run: ```vagrant up```
 
+Url: https://localhost:8081/artifactory
+  * username: admin
+  * password: password
+
 ### Use
 
- 1. Add a user such as dev with read/write access.
- 2. Add the  following to servers section in your settings.xml in your .m2 directory on your machine.
+ * Add a user such as dev with read/write access.
+ * Add the  following to servers section in your settings.xml in your .m2 directory on your machine.
 
 ```
 <server>
@@ -25,9 +29,9 @@ To create the vagrant box, run: ```vagrant up```
   <url>http://localhost:8081/artifactory/libs-release-local</url>
   <username>dev</username>
   <password>password</password>
-</server>
-```
- 3. Reference repos in pom file.
+</server>```
+
+* Reference repos in pom file.
 
 ```
  <distributionManagement>
@@ -45,9 +49,3 @@ To create the vagrant box, run: ```vagrant up```
   </snapshotRepository>
 <distributionManagement>
 ```
-
-
-
-Default login:
-  * username: admin
-  * password: password
