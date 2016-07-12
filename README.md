@@ -12,6 +12,7 @@ To create the vagrant box, run: ```vagrant up```
 
  1. Add a user such as dev with read/write access.
  2. Add the  following to servers section in your settings.xml in your .m2 directory on your machine.
+
  ```
 <server>
   <id>local-snapshot</id>
@@ -27,6 +28,7 @@ To create the vagrant box, run: ```vagrant up```
 </server>
    ```
  3. Reference repos in pom file.
+
  ```
  <distributionManagement>
   <repository>
