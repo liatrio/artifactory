@@ -29,7 +29,8 @@ Url: https://localhost:8081/artifactory
   <url>http://localhost:8081/artifactory/libs-release-local</url>
   <username>dev</username>
   <password>password</password>
-</server>```
+</server>
+```
 
 * Reference repos in pom file.
 
