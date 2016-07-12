@@ -13,7 +13,7 @@ To create the vagrant box, run: ```vagrant up```
  1. Add a user such as dev with read/write access.
  2. Add the  following to servers section in your settings.xml in your .m2 directory on your machine.
 
- ```
+```
 <server>
   <id>local-snapshot</id>
   <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
@@ -26,10 +26,10 @@ To create the vagrant box, run: ```vagrant up```
   <username>dev</username>
   <password>password</password>
 </server>
-   ```
+```
  3. Reference repos in pom file.
 
- ```
+```
  <distributionManagement>
   <repository>
     <id>local-release</id>
@@ -44,7 +44,7 @@ To create the vagrant box, run: ```vagrant up```
     <uniqueVersion>false</uniqueVersion>
   </snapshotRepository>
 <distributionManagement>
- ```
+```
 
 
 
